@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: #562135; */
+    background-color: #F9F9F9;
+    box-sizing: border-box;
+    text-decoration: none;
+    flex-wrap: wrap;
+    
+}
+/* header {
+    background-color: #D17FA4;
+    background-image: url(images/fondo.jpg);
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    height: 70px;
+    color: black;
+} */
+
+
+.title-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 20px;
+    height: 15vh;
+}
+
+.title-wrap:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+    background-image: url("images/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    /* transform: rotate(180deg); */
+}
+
+.title-content {
+    position: relative;
+}
+
+
+.button {
+    background-color: #D17FA4;
+    box-shadow: 0px 0px 10px #92dde6; /* Sombra */
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-left: 50px;
+    padding-top: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #B3618C;
+    
+}
+.group-cards {
+    display: flex;
+    justify-content: space-around; /* Para distribuir las tarjetas horizontalmente */
+    flex-wrap: wrap; /* Para que las tarjetas se envuelvan cuando el espacio es insuficiente */
+    padding: 20px; /* Agregamos un poco de espacio entre las tarjetas */
+    padding-top: 100px;
+}
+.group-cards > div {
+    background-color: #D17FA4; /* Color de fondo de las tarjetas */
+    color: #ffff; /* Color de texto */
+    width: 230px; /* Ancho de las tarjetas */
+    margin-bottom: 20px; /* Espacio entre las tarjetas */
+    border-radius: 10px; /* Borde redondeado */
+    box-shadow: 0px 0px 20px #D17FA4; /* Sombra */
+}
+.text-card {
+    padding: 20px;
+}
+img {
+    width: 100%;
+    border-top-left-radius: 10px; /* Ajustamos la esquina superior izquierda de la imagen */
+    border-top-right-radius: 10px; /* Ajustamos la esquina superior derecha de la imagen */
+}
